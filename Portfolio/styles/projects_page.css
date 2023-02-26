@@ -1,0 +1,25 @@
+#main_header{
+    height: 200px;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main_header h1{
+    font-size: 2rem;
+    letter-spacing: 7px;
+    color: #fff;
+}
+
+
+
+@media(max-width:499px){
+    #main_header{
+        height: 100px;
+    }
+    #main_header h1{
+        font-size: 1rem;
+        letter-spacing: 7px;
+        color: #fff;
+    }
+}

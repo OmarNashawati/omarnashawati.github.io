@@ -1,0 +1,143 @@
+
+#projectDetailsHead{
+    width: 100%;
+    height: 50vh;
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #e1e1e1;
+}
+
+#projectDetailsHead #projectDetailsHeadText{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#projectDetailsHead #detailsLinkButtons{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#projectDetailsHead #detailsLinkButtons #privacyPolicyLink{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#projectDetailsHead #detailsLinkButtons #privacyPolicyLink:hover{
+    text-decoration: underline;
+}
+
+#projectDetailsHead #projectDetailsHeadText #projeName{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+#projectDetailsHead #projectDetailsHeadText #projeCategory{
+    font-size: 18px;
+}
+#projectDetailsHead #projectDetailsHeadText #projeLongDescription{
+    font-size: 15px;
+}
+
+#gallerySection h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+    letter-spacing: 10px;
+}
+#projectDetailsHead #logo{
+    height: 100%;
+    padding: 20px;
+}
+
+#projectDetailsHead #logo img{
+    height: 100%;
+} 
+
+#gallery{
+    width: 100%;
+    min-height: 50vh;
+}
+
+#gallery img{
+    height: 350px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+
+}
+
+#retingAndReview{
+    width: 100%;
+    height: 90vh;
+}
+
+#retingAndReview h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+    letter-spacing: 10px;
+}
+
+
+
+
+
+
+.GoogleStoreButton{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #1e1e1e;
+    border-radius: 5px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.GoogleStoreButton:hover{
+    background-color: #1e1e1e;
+}
+
+.GoogleStoreButton:hover i,
+.GoogleStoreButton:hover p{
+    color: #FFF;
+}
+
+.GoogleStoreButton i{
+    width: 25%;
+    font-size: 25px;
+}
+
+.GoogleStoreButton div{
+    width: 80%;
+}
+
+.GoogleStoreButton div p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+@media(max-width:799px){
+	#projectDetailsHead #logo{
+        height: 50%;
+    }
+}
+
+@media(max-width:499px){
+	#projectDetailsHead #logo{
+        height: 100px;
+    }
+}

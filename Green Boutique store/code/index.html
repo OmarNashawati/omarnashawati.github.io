@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- S T Y L E S -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- C D N 's -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Itim&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Green Boutique</title>
+</head>
+<body>
+    <header>
+        <div id="header_upper_line">
+            <a id="logo_div" href="index.html">
+                <img src="../src/logo v1.png"/>
+            </a>
+            <div id="head_options">
+                <div class="head_options_item">
+                    <i class="fa-regular fa-user"></i>
+                    <p>hesapım</p>
+                </div>
+                <div class="head_options_item">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>favorilerim</p>
+                </div>
+                <div class="head_options_item">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p>sepetim</p>
+                    <p id="fav_item_count"></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="header_lower_line">
+            <div>
+                <a href="produts.html?tag=cok_satanlar">Çok Satanlar</a>
+                <a href="produts.html?tag=ust_giyim">Üst Giyim</a>
+                <a href="produts.html?tag=alt_giyim">Alt Giyim</a>
+                <a href="produts.html?tag=takim">Takım</a>
+                <a href="produts.html?tag=aksesuar">Aksesuar</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero_section">
+            <div>
+                <h2>Yeni</h2>
+                <h2>Sezon</h2>
+                <h2>Şıklığı</h2>
+            </div>
+            <img src="../src/mnz-ToLMORRb97Q-unsplash.jpg"/>
+        </section>
+
+        <section id="new_products_section">
+            <div>
+                <h2>YENİ GELENLER</h2>
+                <div id="new_products_div">
+                    <!-- Script  -->
+                </div>
+            </div>
+        </section>
+
+        <section id="catagories_section">
+            <div>
+                <h2>KATEGORILER</h2>
+                <div id="catagories_div">
+                    <a href="produts.html?tag=t-shirt" class="catagory_card L_card" style="background-image: url(../src/md-salman-tWOz2_EK5EQ-unsplash2.jpg);"><h2>T-Shirt</h2></a>
+                    <a href="produts.html?tag=ayakabi" class="catagory_card L_card" style="background-image: url(../src/matus-hatala-pFzxaKhdFME-unsplash.jpg);"><h2>AYAKKABI</h2></a>
+                    <a href="produts.html?tag=gomlek"  class="catagory_card L_card" style="background-image: url(../src/nimble-made-7RIMS-NMsbc-unsplash2.jpg);"><h2>GÖMLEK</h2></a>
+                    <a href="produts.html?tag=aksesuar" class="catagory_card L_card" style="background-image: url(../src/jan-de-keijzer-gSKQnv55TGA-unsplash2.jpg);"><h2>AKSESUAR</h2></a>
+                    <a href="produts.html?tag=jeans" class="catagory_card XL_card" style="background-image: url(../src/eduardo-pastor-3oejsU5OQVk-unsplash2.jpg);"><h2>JEANS</h2></a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div>
+                <h2>BÜLTENİMİZE ABONE OLUN</h2>
+                <p>Kampanyalardan İlk Sizin Haberiniz Olsun</p>
+            </div>
+            <div>
+                <input type="email" placeholder="example@mail.com">
+                <button type="submit">Gönder</button>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <img id="footer_logo" src="../src/logo v1.png" alt="" srcset="">
+        </div>
+        <div>
+            <h2>Kategoriler</h2>
+            <a href="produts.html?tag=cok_satanlar">Çok Satanlar</a>
+            <a href="produts.html?tag=ust_giyim">Üst Giyim</a>
+            <a href="produts.html?tag=alt_giyim">Alt Giyim</a>
+            <a href="produts.html?tag=takim">Takım</a>
+            <a href="produts.html?tag=aksesuar">Aksesuar</a>
+        </div>
+        <div>
+            <h2>Sosyal media</h2>
+            <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href=""><i class="fa-brands fa-twitter"></i>twitter</a>
+
+        </div>
+
+        <div>
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>055 256 22 55</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

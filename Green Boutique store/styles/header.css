@@ -1,0 +1,159 @@
+/* HEADER */
+header{
+    /* background-color: #EAE509; */
+    color: #191919;
+    width: 100%;
+
+}
+
+header #header_upper_line{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+header #logo_div img{
+    width: 150px;
+}
+
+header #head_options{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+header #head_options .head_options_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px 18px;
+    cursor: pointer;
+}
+
+
+header #head_options .head_options_item i{
+    margin-right: 5px;
+
+}
+
+#fav_item_count{
+    margin-left: 8px;
+    font-weight: 900;
+    color: #2B7A0B;
+}
+
+header #header_lower_line{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+header #header_lower_line div{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header #header_lower_line a{
+    padding: 8px 18px;
+    cursor: pointer;
+}
+
+
+
+#mobil_head_options{
+    display: none;
+}
+
+#mobil_side_bar_button{
+    display: none;
+}
+
+
+
+#mobil_side_bar{
+    font-size: 15px;
+    height: 100%;
+    width: 70%;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: -500px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 4px 4px 8px 2px #41414128;
+    transition: left .2s linear;
+    
+}
+
+#mobil_side_bar #mobil_side_bar_close_button{
+    width: 90%;
+    display: flex;
+    padding: 10px 0;
+}
+
+#mobil_side_bar #side_bar_options{
+    display: flex;
+    margin-bottom: 20px;    
+}
+
+#mobil_side_bar #side_bar_options .side_bar_options_item{
+   display: flex;
+   border: 1px solid #191919;
+   border-radius: 8px;
+   padding: 10px 30px;
+   margin: 5px;
+
+    
+}
+
+#mobil_side_bar a{
+   
+    padding: 10px 0;
+}
+
+
+@media(max-width:599px){
+
+    #mobil_side_bar{
+        display: flex;
+    }
+    #mobil_head_options{
+        display: block;
+    }
+    #mobil_side_bar_button{
+        display: block;
+    }
+
+
+    header #logo_div img{
+        width: 100px;
+    }
+
+    header #head_options{
+        display: none;
+    }
+
+    header #header_lower_line{
+        display: none;
+    }
+}
+
+@media(max-width:799px){
+}
+
+@media(max-width:1000px){
+
+    
+
+}

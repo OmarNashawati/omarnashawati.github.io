@@ -1,0 +1,133 @@
+/* MAIN */
+
+
+
+
+main #catagories_section #catagories_div{
+    display: grid;
+    gap: 10px;;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+main #catagories_section #catagories_div .catagory_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-size: cover;
+    background-color: #343434;
+}
+
+main #catagories_section #catagories_div .catagory_card h2{
+    color: #FFF;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 10px 20px;   
+    background-color: #19191996;
+    transition: scale 0.25s linear, background-color 0.25s linear;
+}
+
+main #catagories_section #catagories_div .catagory_card:hover h2{
+    scale: 1.2;
+    background-color: #191919;
+}
+
+main #catagories_section #catagories_div .L_card{
+    height: 400px;
+    width: 1fr;
+    border-radius: 8px;
+}
+
+main #catagories_section #catagories_div .XL_card{
+    height: 400px;
+    grid-column: 2/4;
+    width: 2fr;
+}
+
+
+
+@media(max-width:499px){
+
+
+    main #catagories_section #catagories_div{
+        display: grid;
+        gap: 10px;;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: row;
+        flex-flow: nowrap;
+        justify-content: start;
+        align-items: center;
+    }
+
+    main #catagories_section #catagories_div .catagory_card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-size: cover;
+        background-color: #343434;
+    }
+
+    main #catagories_section #catagories_div .catagory_card h2{
+        color: #FFF;
+        font-weight: 400;
+        border-radius: 4px;
+        padding: 10px 20px;   
+        background-color: #19191996;
+        transition: scale 0.25s linear, background-color 0.25s linear;
+    }
+
+    main #catagories_section #catagories_div .catagory_card:hover h2{
+        scale: 1.2;
+        background-color: #191919;
+    }
+
+    main #catagories_section #catagories_div .L_card{
+        height: 400px;
+        width: 1fr;
+        border-radius: 8px;
+    }
+
+    main #catagories_section #catagories_div .XL_card{
+        height: 400px;
+        grid-column: 2/4;
+        width: 2fr;
+    }
+   
+}
+
+@media(max-width:799px){
+ 
+}
+
+@media(max-width:1000px){
+
+    main #catagories_section #catagories_div{
+
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    main #catagories_section #catagories_div .L_card{
+        height: 400px;
+        width: 100%;
+        border-radius: 8px;
+    }
+    
+    main #catagories_section #catagories_div .XL_card{
+        height: 400px;
+        width: 100%;
+    }
+    
+
+}
+
+
+

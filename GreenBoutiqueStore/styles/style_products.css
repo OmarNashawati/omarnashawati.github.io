@@ -1,0 +1,31 @@
+#title_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #191919;
+}
+
+#title_section h2{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 15px;
+}
+
+main #produts_section  .product_card .card_body .add_to_cart{
+    width: 50%;
+    font-size: 15px;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #3a9c0c;
+}
+
+
+@media(max-width:499px){
+    #title_section h2{
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+}

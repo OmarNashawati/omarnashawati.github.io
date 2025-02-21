@@ -20,7 +20,7 @@ function setHtml(index){
     const bannerSection = document.querySelector('.hero-banner-section');
 
     bannerSection.innerHTML = `
-        <img src="/src/banners/${url}" alt="">
+        <img src="./src/banners/${url}" alt="">
         <div class="slider-controller-container">
             ${renderSliderControlPoints(index)}
         </div>

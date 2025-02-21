@@ -6,7 +6,7 @@ export function renderServices(){
     for(const service of sercices ){
         html += `
 
-        <a href="../pages/${service.href}" class="popular-servise-item" style=" background-image: url('./src/services/${service.imageUrl}');">
+        <a href="./pages/${service.href}" class="popular-servise-item" style=" background-image: url('./src/services/${service.imageUrl}');">
             <div class="text">${service.title}</div>
             <div class="cover"></div>
         </a>

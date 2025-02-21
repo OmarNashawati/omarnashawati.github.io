@@ -29,7 +29,6 @@ function setHtml(index){
     document.querySelectorAll('.slider-point').forEach(point => {
         point.addEventListener('click',()=>{
            setHtml(point.id);
-            
         })
     })
 }

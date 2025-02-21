@@ -1,4 +1,4 @@
-import {reviews} from '../data/reviews.js';
+import {reviews} from './data/reviews.js';
 
 
 export function renderReviews(){

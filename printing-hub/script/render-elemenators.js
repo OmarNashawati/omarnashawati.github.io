@@ -6,7 +6,7 @@ export function renderElemenator(){
     for(const ele of elemenators){
         html += `
             <div class="elemenator-item">
-                <img class="elemenator-img" src="./src/elemenators/${ele.imageUrl}" alt="" srcset="">
+                <img class="elemenator-img" src="../src/elemenators/${ele.imageUrl}" alt="" srcset="">
                 <div class="elemenator-title">${ele.title}</div>
                 <div class="elemenator-description">${ele.desc}</div>
             </div>

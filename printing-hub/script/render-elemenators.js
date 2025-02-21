@@ -1,4 +1,4 @@
-import { elemenators } from "../data/elemenators.js";
+import { elemenators } from "./data/elemenators.js";
 
 export function renderElemenator(){
 

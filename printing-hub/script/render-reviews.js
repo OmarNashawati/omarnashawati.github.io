@@ -1,4 +1,4 @@
-import {reviews} from '../data/reviews.js';
+import {reviews} from './data/reviews.js';
 
 
 export function renderReviews(){
@@ -11,7 +11,7 @@ export function renderReviews(){
                     <img class="user-image" src="./src/${review.userImage}"/>
                 </div>
                 <div>
-                    <div class="rating-stars"><img src="/src/ratings/rating-${review.rating*10}.png" alt=""></div>
+                    <div class="rating-stars"><img src="./src/ratings/rating-${review.rating*10}.png" alt=""></div>
                     <div class="user-name">${review.userName}</div>
                 </div>
             </div>

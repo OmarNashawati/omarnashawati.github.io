@@ -19,6 +19,7 @@ class Cart {
             this.cartItems.push({
                 productId,
                 quantity: 1,
+                deliveryOptionId: '1',
             })
         }
         
@@ -33,6 +34,16 @@ class Cart {
             }
         })
         this.cartItems = newCartItems;
+        this.saveToLocalStorage();
+    }
+
+    updateDelivertOption(productId, deliveryOptionId){
+        const matchedItem = this.cartItems.find(item => item.productId === productId);
+        console.log(matchedItem);
+        
+        if(matchedItem){
+            matchedItem.deliveryOptionId = deliveryOptionId;
+        }
         this.saveToLocalStorage();
     }
 }

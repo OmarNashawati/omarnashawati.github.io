@@ -1,3 +1,5 @@
+import { formatCurrency } from "../scripts/utility/money.js";
+
 class Product {
   id;
   image;
@@ -17,7 +19,7 @@ class Product {
 
 
   getPrice(){
-    return `$${Math.round(this.priceCents/100).toFixed(2)}`
+    return `$${formatCurrency(this.priceCents)}`
   }
 
   getStars(){

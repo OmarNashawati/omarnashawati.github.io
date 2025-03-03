@@ -1,5 +1,8 @@
 import { cart } from "../../data/cart.js";
 import { formatCurrency } from "../utility/money.js";
+import { placeOrder } from "../../data/orders.js";
+import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
+import { generateUUID } from "../utility/uuid-generator.js";
 
 
 export function renderPaymentSummary(){
@@ -18,7 +21,7 @@ export function renderPaymentSummary(){
     </div>
 
     <div class="payment-summary-row">
-        <div>Items (3):</div>
+        <div>Items (${cart.getCartItemsCount()}):</div>
         <div class="payment-summary-money">$${formatCurrency(itemsTotal)}</div>
     </div>
 
@@ -42,7 +45,7 @@ export function renderPaymentSummary(){
         <div class="payment-summary-money">$${formatCurrency(orderTotal)}</div>
     </div>
 
-    <button class="place-order-button button-primary">
+    <button class="place-order-button button-primary js-place-order-button">
         Place your order
     </button>
     `;
@@ -52,4 +55,16 @@ export function renderPaymentSummary(){
 
 
     document.querySelector('.js-payment-summary').innerHTML = html;
+
+    document.querySelector('.js-place-order-button')
+        .addEventListener('click', () => {
+            const order = {
+                id: generateUUID(),
+                orderPlacedDate: dayjs(),
+                orderTotal: orderTotal,
+                orderItems: cart.cartItems,
+            }
+
+            placeOrder(order);            
+        })
 }

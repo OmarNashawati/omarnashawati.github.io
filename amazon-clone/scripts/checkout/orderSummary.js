@@ -55,12 +55,15 @@ export function renderOrderSummary(){
 
     document.querySelector('.js-order-summary').innerHTML = html;
 
+    updateNavbarItemsCount();
+
     document.querySelectorAll('.js-delete-item').forEach(button => {
         button.addEventListener('click',() => {
             const productId = button.dataset.productId;
             cart.removeFromCart(productId);
             document.querySelector(`.js-cart-item-container-${productId}`).remove();
             renderPaymentSummary();
+            updateNavbarItemsCount();
         })
     })
 
@@ -73,6 +76,7 @@ export function renderOrderSummary(){
             renderPaymentSummary();
         })
     })
+
 }
 
 function renderDeliveryOptions(cartItem){
@@ -100,4 +104,9 @@ function renderDeliveryOptions(cartItem){
     });
 
     return html;
+}
+
+function updateNavbarItemsCount(){
+    document.querySelector('.js-checkout-cart-item-counts').innerHTML = `${cart.getCartItemsCount()} items`
+
 }

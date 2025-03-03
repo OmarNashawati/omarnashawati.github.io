@@ -1,3 +1,6 @@
+import {products} from '../data/products.js';
+import {deliveryOptions} from '../data/deliveryOptions.js';
+
 class Cart {
     #name;
     cartItems;
@@ -46,6 +49,36 @@ class Cart {
         }
         this.saveToLocalStorage();
     }
+
+    getCartItemsCount(){
+        let count = 0;
+        this.cartItems.forEach(item => {
+            count += item.quantity;
+        })
+        return count;
+    }
+
+    getCartTotal(){
+        let total = 0;
+        this.cartItems.forEach(item => {
+            const productPriceCents = products.find(product => product.id === item.productId).priceCents;
+            total += (productPriceCents*item.quantity)
+        })
+
+        return total;
+    }
+
+    getShippingTotal(){
+        let total = 0;
+        this.cartItems.forEach(item => {
+            const shippingPriceCents = deliveryOptions.find(option => option.id === item.deliveryOptionId).priceCent;
+            total += shippingPriceCents;
+        })
+
+        return total;
+    }
+
+    
 }
 
 export const cart = new Cart('cart');

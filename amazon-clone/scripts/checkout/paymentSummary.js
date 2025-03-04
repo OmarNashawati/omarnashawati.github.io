@@ -1,8 +1,6 @@
 import { cart } from "../../data/cart.js";
 import { formatCurrency } from "../utility/money.js";
 import { placeOrder } from "../../data/orders.js";
-import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
-import { generateUUID } from "../utility/uuid-generator.js";
 
 
 export function renderPaymentSummary(){
@@ -53,18 +51,15 @@ export function renderPaymentSummary(){
 
 
 
+    console.log(cart);
 
     document.querySelector('.js-payment-summary').innerHTML = html;
 
     document.querySelector('.js-place-order-button')
         .addEventListener('click', () => {
-            const order = {
-                id: generateUUID(),
-                orderPlacedDate: dayjs(),
-                orderTotal: orderTotal,
-                orderItems: cart.cartItems,
-            }
-
-            placeOrder(order);            
+            
+            placeOrder(cart.cartItems);          
+            window.location.href = './orders.html' ;
+            localStorage.removeItem('cart');
         })
 }

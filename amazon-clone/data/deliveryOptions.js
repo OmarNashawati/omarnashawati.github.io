@@ -45,3 +45,10 @@ export const deliveryOptions = [
 ].map(optionDetails => {
     return new DeliveryOption(optionDetails);
 })
+
+export function getArrivingDate (optionId) {
+    const option = deliveryOptions.find(option => option.id === optionId);
+
+    const date = dayjs().add(option.deliveryDays, 'days')
+    return date.format('dddd, MMMM D');
+}

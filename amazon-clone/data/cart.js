@@ -77,8 +77,16 @@ class Cart {
 
         return total;
     }
-
-    
 }
 
 export const cart = new Cart('cart');
+
+export function getCartTotal(cartItems){
+    let total = 0;
+    cartItems.forEach(item => {
+        const productPriceCents = products.find(product => product.id === item.productId).priceCents;
+        total += (productPriceCents*item.quantity)
+    })
+
+    return total;
+}

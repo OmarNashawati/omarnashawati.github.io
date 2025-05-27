@@ -13,10 +13,10 @@
         font-family: 'Roboto', sans-serif; 
     }
 
-    body,
-    body * {
+    *,
+    body {
+        box-sizing: 	 border-box;   
         margin: 		 unset;
-        box-sizing: 	 border-box;
         padding: 		 unset;
         font-size:		 unset;
         color: 			 unset;
@@ -28,8 +28,8 @@
         display: flex;
         justify-content: center;
         align-items: start;
-        /* background-color: #121212; */
-        background-image: linear-gradient(#021B79,#0575E6) ;
+        background-color: #121212;
+        /* background-image: linear-gradient(#021B79,#0575E6) ; */
     }
 
     .linktree-mian{
@@ -54,6 +54,8 @@
         text-align: center;
         color: #FFF;
         padding-bottom: 10px;
+        font-weight: bold;
+        font-size: large;
     }
 
     #links-div{
@@ -65,19 +67,16 @@
     
     .link-item{
         width: 100%;
-        border: 1px solid #FFF;
-        border-radius: 10px;
+        border-bottom: 1px solid #777;
         color: #FFF;
-        padding: 10px 30px;
-        margin-bottom: 5px;
+        padding: 1rem 2rem;
         text-align: center;
-        font-size: 14px;
+        font-size: small;
     }
 
     
     .link-item:hover{
-        color: #111;
-        background-color: #FFF;
+        background-color: rgba(255, 255, 255, 0.1);
     }
 </style>
 <body>
